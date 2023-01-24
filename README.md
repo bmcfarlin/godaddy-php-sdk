@@ -118,7 +118,7 @@ $client->domain->record->create($domain, $type, $name, $value)
 $client->domain->record->update($domain, $type, $name, $value)
 $client->domain->record->delete($domain, $type, $name)
 ```
-Also, using `$client->domain->list()` would list the first 200 domain by default (which is the first page, with `size` as 200, and `page` as 1). To get more, you will have to use `size` and `page` to get the second page of domain.
+Also, using `$client->domain->list()` would list the first 100 domain by default (which is the first page, with `size` as 100, and `page` as 1). To get more, you will have to use `size` and `page` to get the second page of domain.
 
 ## Reporting issues
 Report any feedback or problems with this version by [opening an issue on Github](https://github.com/bmcfarlin/godaddy-php-sdk/issues).

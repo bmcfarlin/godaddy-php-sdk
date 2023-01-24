@@ -110,13 +110,17 @@ The SDK uses consistent interfaces to create, retrieve, update, delete and list 
 
 ```php
 <?php
-$client->domain->create($params) # Create
-$client->domain->get($id) # Get
-$client->domain->update($id, $params) # Update
-$client->domain->delete($id) # Delete
-$client->domain->list() # List all domain, max 200 at a time
+$client->domain->list()
+$client->domain->get($domain)
+$client->domain->record->list($domain)
+$client->domain->record->get($domain, $type, $name)
+$client->domain->record->create($domain, $type, $name, $value)
+$client->domain->record->update($domain, $type, $name, $value)
+$client->domain->record->delete($domain, $type, $name)
 ```
 Also, using `$client->domain->list()` would list the first 200 domain by default (which is the first page, with `size` as 200, and `page` as 1). To get more, you will have to use `size` and `page` to get the second page of domain.
 
 ## Reporting issues
 Report any feedback or problems with this version by [opening an issue on Github](https://github.com/bmcfarlin/godaddy-php-sdk/issues).
+
+

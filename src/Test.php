@@ -63,24 +63,3 @@
   // $json = json_encode($item, JSON_PRETTY_PRINT);
   // print("RESPONSE\n$json\n");
 
-// curl -X 'PATCH' \
-//   'https://api.ote-godaddy.com/v1/domains/tellme.com/records' \
-//   -H 'accept: application/json' \
-//   -H 'Content-Type: application/json' \
-//   -H 'Authorization: sso-key UzQxLikm_46KxDFnbjN7cQjmw6wocia:46L26ydpkwMaKZV6uVdDWe' \
-//   -d '[
-//   {
-//     "data": "string",
-//     "name": "string",
-//     "port": 65535,
-//     "priority": 0,
-//     "protocol": "string",
-//     "service": "string",
-//     "ttl": 0,
-//     "type": "A",
-//     "weight": 0
-//   }
-// ]'
-
-// 78.46.66.209
-// 5.161.66.58
